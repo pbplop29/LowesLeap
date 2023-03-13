@@ -1,0 +1,34 @@
+
+
+interface Circle {
+    public double area(int r);
+
+}
+
+interface Rectangle {
+    public int area(int l, int b);
+
+
+}
+
+interface SimpleInterest {
+    public double calculate(int p, int t, double r);
+}
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Circle c1 = (x) -> {
+            return (3.14*x*x);
+        };
+        Rectangle r1 = (x,y)->{
+            return x*y;
+        };
+        SimpleInterest i1 = (p,t,r)->{
+            return p*t*r/100;
+        };
+        System.out.println(c1.area(5));
+        System.out.println(r1.area(4,5));
+        System.out.println(i1.calculate(5000,2,4.5));
+    }
+}
+    

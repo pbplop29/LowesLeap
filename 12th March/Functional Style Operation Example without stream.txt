@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
+// Stream APIs
+// Allows Functional Style Operations
+// That we can perform on String by fetching, filtering and collecting the data
+public class Main {
+    public static void main(String[] args) {
+        List<Cust> c1 = new ArrayList<>();
+        c1.add(new Cust(1, "jaya", 36));
+        c1.add(new Cust(2, "madhav", 25));
+        c1.add(new Cust(3, "shyam", 20));
+
+        List<Integer> ca = new ArrayList<>();
+        for (Cust cc : c1) { //fetching
+            if (cc.age > 23) ca.add(cc.age); //filtering and collecting
+        }
+        System.out.println(ca);
+    }
+}
+    
