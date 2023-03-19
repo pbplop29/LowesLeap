@@ -1,0 +1,24 @@
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class MyJd{
+    public static void main(String[] args) throws Exception{
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:myssql://localhost:3306/vvv,"username", "password"");
+        PreparedStatement ps = con.PreparedStatement("insert into student values(?,?,?)");
+        ps.setInt(1,4);
+        ps.setString(2,"Komal");
+        ps.setInt(3,72);
+        int c = ps.ExecuteUpdate();
+        System.out.println(c+ "Record inserted.");
+    }
+}
+
+
+// Build Path
+// Configure build path
+// Add external jars
+// Add the mqsql-connector.jar file 

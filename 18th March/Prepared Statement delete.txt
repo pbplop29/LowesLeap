@@ -1,0 +1,28 @@
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class MyJd{
+    public static void main(String[] args) throws Exception{
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:myssql://localhost:3306/vvv,"username", "password"");
+
+        Scanner sc = new Scanner(System.in);
+        int sid = sc.nextInt();
+
+
+
+        PreparedStatement ps = con.PreparedStatement("delete from student where id=?");
+        ps.setInt(1,sid);
+        int c = ps.ExecuteUpdate();
+        System.out.println(c+ "Record deleted.");
+    }
+}
+
+
+// Build Path
+// Configure build path
+// Add external jars
+// Add the mqsql-connector.jar file 

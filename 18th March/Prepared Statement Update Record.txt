@@ -1,0 +1,29 @@
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class MyJd{
+    public static void main(String[] args) throws Exception{
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:myssql://localhost:3306/vvv,"username", "password"");
+
+        Scanner sc = new Scanner(System.in);
+        int sid = sc.nextInt();
+        String sName = sc.next();
+       
+
+        PreparedStatement ps = con.PreparedStatement("update student set name=? where id=?");
+        ps.setInt(1,sid);
+        ps.setString(2,sName);
+        int c = ps.ExecuteUpdate();
+        System.out.println(c+ "Record updated.");
+    }
+}
+
+
+// Build Path
+// Configure build path
+// Add external jars
+// Add the mqsql-connector.jar file 

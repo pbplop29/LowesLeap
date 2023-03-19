@@ -1,0 +1,42 @@
+package com.veera;
+
+public class PRoduct{
+    int pName;
+
+    public void setPName(String name){
+        this.pName = name;
+    }
+
+    public void show(){
+        System.out.println("The product is " + pName);
+    }
+
+
+    // Right click
+    // New
+    // Other
+    // Search for Xml File
+    // Give a name and finish
+    // copy paste the available schema file 
+    // write your own code within beans
+
+/*
+    <beans>
+    <bean id="pBean" class="com.veera.Product">
+    <property name="pName" value="iPhone"></property>
+    </bean>
+    </beans>
+*/
+
+    // Write a test class
+
+}
+
+// use Resource interface from or.springboot..... package
+public class Test{
+    public static void main(String[] args){
+        // go to google 
+        // download spring core jars 
+        // add the jars
+    } 
+}
