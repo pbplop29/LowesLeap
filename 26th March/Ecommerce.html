@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Ecommerce Website</title>
+    <style>
+        body {
+          background-color: white;
+          color: #333;
+          font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+          color: orange;
+          text-align: center;
+          margin-top: 30px;
+        }
+        
+        h2 {
+          color: red;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+        
+        table {
+          border-collapse: collapse;
+          margin-bottom: 30px;
+        }
+        
+        td {
+          padding: 10px;
+          border: 1px solid #ddd;
+          text-align: center;
+        }
+        
+        td img {
+          display: block;
+          margin: 1rem;
+        }
+        
+        td h3 {
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+        
+        td p {
+          margin-top: 5px;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        
+        form {
+            width: 50vw;
+            border:#333 2px solid;
+            padding: 1rem;
+          margin-bottom: 20px;
+        }
+        
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          display: block;
+          margin-bottom: 10px;
+          width: 50%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        
+        input[type="submit"] {
+          background-color: orange;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+          background-color: red;
+        }
+        
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        li {
+          margin-bottom: 10px;
+        }
+        
+        a {
+          color: #333;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        
+        a:hover {
+          color: red;
+        }
+        
+        p {
+          margin-top: 20px;
+          margin-bottom: 0;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Welcome to My Ecommerce Website</h1>
+    <marquee behavior="scroll" direction="left">NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER! NEW OFFER!</marquee>
+    <h2>Featured Products</h2>
+    <table>
+      <tr>
+        <td>
+          <a href="product1.html">
+            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 1" style="max-height: 100px; width: auto;"  >
+            <h3>Product 1</h3>
+          </a>
+          <p>$1000.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="1">
+            <input type="submit" value="Add to Cart">
+          </form>
+        </td>
+        <td>
+          <a href="product2.html">
+            <img src="https://images.pexels.com/photos/279480/pexels-photo-279480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product 2" style="max-height: 100px;width: auto;">
+            <h3>Product 2</h3>
+          </a>
+          <p>$19.99</p>
+          <form action="add_to_cart.php" method="post">
+            <input type="hidden" name="product_id" value="2">
+            <input type="submit" value="Add to Cart">
+          </form>
+        </td>
+      </tr>
+    </table>
+    
+    <h2>Categories</h2>
+    <ul>
+      <li><a href="category1.html">Electronics</a></li>
+      <li><a href="category2.html">Cosmetics</a></li>
+      <li><a href="category3.html">Clothing</a></li>
+    </ul>
+    
+    <h2>Search</h2>
+    <form action="search.php" method="get">
+      <label for="search_query">Search:</label>
+      <input type="text" name="query" id="search_query">
+      <input type="submit" value="Go">
+    </form>
+    
+    <h2>Contact Us</h2>
+    <form action="contact.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+      <br>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message"></textarea>
+      <br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+    </form>
+    
+    <p>&copy; 2023 My Ecommerce Website</p>
+  </body>
+</html>
