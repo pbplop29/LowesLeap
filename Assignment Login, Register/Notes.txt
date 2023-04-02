@@ -1,0 +1,46 @@
+CSS (Cascading Style Sheets) is a language used to describe the presentation and styling of HTML or XML documents. It is used to define the layout, typography, color, and other visual aspects of web pages.
+
+A CSS Selector is a pattern that is used to select and target specific HTML elements on a web page to apply styles to them. Selectors can be based on element types, class names, ID attributes, attributes values, or even based on their relationship with other elements.
+
+A CSS Declaration is a property-value pair that defines a specific aspect of the style for a selected HTML element. For example, a declaration can define the color of text, the font family, the width of an element, or any other aspect of the presentation. Declarations are enclosed in curly braces and are separated by semicolons.
+
+Here is an example of a CSS rule that uses a selector and a declaration:
+
+h1 {
+  color: blue;
+  font-size: 24px;
+}
+In this example, the selector is the h1 element, and the declarations define the text color as blue and the font size as 24 pixels.
+
+
+
+There are three main types of CSS:
+
+Inline CSS: This type of CSS is applied directly to an HTML element using the style attribute. Inline styles take precedence over other styles defined in external style sheets or in the <head> section of the HTML document.
+Example:
+
+html
+Copy code
+<p style="color: red;">This text will be displayed in red.</p>
+Internal CSS: This type of CSS is defined in the <head> section of an HTML document using the <style> tag. Internal styles apply to the entire HTML document, but they have a lower precedence than inline styles.
+Example:
+
+<head>
+  <style>
+    p {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p>This text will be displayed in blue.</p>
+</body>
+External CSS: This type of CSS is defined in a separate file with a .css extension and linked to an HTML document using the <link> tag. External styles have the highest precedence and can be reused across multiple HTML documents.
+Example:
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p class="intro">This text will be styled according to the rules defined in styles.css.</p>
+</body>
+In general, it is best practice to use external CSS for large or complex web projects, as it makes it easier to manage and maintain the styles across multiple pages.

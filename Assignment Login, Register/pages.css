@@ -1,0 +1,79 @@
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: white;
+	color: #E64F00;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+}
+
+
+nav li {
+	
+	padding: 5px;
+	border-radius:5px ;
+	border: dotted 2px #E64F00;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	padding: 5px;
+	letter-spacing: 5px;
+	color: #E64F00;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.main {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.hero {
+	background-image: url('https://images.pexels.com/photos/36464/sky-clouds-clouds-form-cumulus-clouds.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding: 100px;
+	text-align: center;
+}
+
+.hero h2 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+
+.btn {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #444;
+}
+
