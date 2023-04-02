@@ -1,3 +1,7 @@
+*::-webkit-scrollbar {
+    display: none;
+  }
+
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -5,8 +9,8 @@ body {
 }
 
 header {
-	background-color: #333;
-	color: #fff;
+	background-color: white;
+	color: #E64F00;
 	padding: 20px;
 }
 
@@ -14,19 +18,20 @@ header h1 {
 	margin: 0;
 }
 
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
 
 nav li {
+	
+	padding: 5px;
+	border-radius:5px ;
+	border: dotted 2px #E64F00;
 	display: inline-block;
 	margin-right: 20px;
 }
 
 nav a {
-	color: #fff;
+	padding: 5px;
+	letter-spacing: 5px;
+	color: #E64F00;
 	text-decoration: none;
 }
 

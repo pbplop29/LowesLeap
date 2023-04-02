@@ -10,6 +10,7 @@ body{
   }
   
   .center{
+    margin-top: 4rem;
     padding: 2rem;
     left: 36%;
     position: relative;
