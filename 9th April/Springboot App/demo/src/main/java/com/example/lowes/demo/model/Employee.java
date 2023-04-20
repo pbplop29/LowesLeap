@@ -5,6 +5,8 @@ import lombok.*;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
+// An entity represents a table in a relational database,
+// and each entity instance corresponds to a row in that table.
 @Entity
 @Getter
 @Setter
@@ -28,6 +30,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" + "empId=" + empId + ", empName='" + empName + '\'' + ", salary=" + salary + ", department=" + department.getDeptName() + '}';
+        return "Employee{" + "Id=" + empId + ", Employee Name='" + empName + '\'' + ", Salary=" + salary + ", Department=" + department.getDeptName() + '}';
     }
 }

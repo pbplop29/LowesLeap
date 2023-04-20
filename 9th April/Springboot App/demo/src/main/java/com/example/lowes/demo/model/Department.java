@@ -6,6 +6,8 @@ import lombok.*;
 import java.util.List;
 import java.util.Set;
 
+// An entity represents a table in a relational database,
+// and each entity instance corresponds to a row in that table.
 @Entity
 @Getter
 @Setter

@@ -5,6 +5,8 @@ import com.example.lowes.demo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+//This annotation is applied to a class to mark it as a request handler.
+//Spring RestController annotation is used to create RESTful web services using Spring MVC.
 @RestController
 public class EmployeeController {
     @Autowired
